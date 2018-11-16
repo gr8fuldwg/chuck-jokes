@@ -48,7 +48,7 @@ handleModalClose() {
           onClick={this.handleModalOpen}>
           Hit Me!
         </button>
-        <img src={chuckPic} />
+        <img className="hvr-buzz-out" src={chuckPic} />
         <Modal className="bg-black red" closeTimeoutMS={150} isOpen={this.state.modalOpen}>
           <header className="flex justify-end mr4 ">
             <button className="f1 ph3 pv2 mb2 dib yellow bg-green b--none mt4" onClick={this.handleModalClose}>X</button>
