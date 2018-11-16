@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import Modal from 'react-modal';
 import './App.css';
-// import axios from 'axios';
+import axios from 'axios';
 import chuckPic from './chuck_pic.png';
 
 const appElement = document.getElementById('root');
 Modal.setAppElement(appElement);
 
-const CHUCK_API = isDev ? '/random' : 'https://api.chucknorris.io/jokes/random';
+// const isDev = process.env.NODE_ENV !== 'production';
+const CHUCK_API =  'https://api.chucknorris.io/jokes/random';
 
 class App extends Component {
   constructor(props) {
@@ -22,25 +23,38 @@ class App extends Component {
   handleModalOpen() {
     axios.get(CHUCK_API)
       .then(response => {
-        const { random } = response.data;
+        const { value } = response.data;
         this.setState({
           modalOpen: true,
-          random: random,
+          value: value,
           error: null,
         });
       })
+      .catch(err => {
+        this.setState({
+          error: err
+        });
+      });
+
     }
+
   render() {
     return (
       <div className="vh-100 bg-purple flex flex-column justify-center items-center">
-        <button className="flex justify-center items-center f1  outline-black br-100 h5 w5 dim ph8 pv2 dib black bg-yellow ">Hit Me!</button>
+        <button className="flex justify-center items-center f1  outline-black br-100 h5 w5 dim ph8 pv2 dib black bg-yellow mr4 mb2"
+        onClick={this.handleModalOpen}>
+        Hit Me!
+        </button>
         <img src={chuckPic} />
-        <Modal>
+        <Modal className="bg-black red" closeTimeoutMS={150} isOpen={this.state.modalOpen}>
           <header>
-            <div className="flex flex-column h-100">
-              <h1>Chuck Norris Joke</h1>
+            <div className="flex justify-center items-center flex-column h-100">
+              <h1>Joke's on............Chuck</h1>
             </div>
           </header>
+          <main className="flex-grow-1 flex flex-column justify-center items-center">
+          <p>{this.state.value}</p>
+          </main>
         </Modal>
       </div>
     );
