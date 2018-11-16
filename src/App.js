@@ -8,7 +8,7 @@ const appElement = document.getElementById('root');
 Modal.setAppElement(appElement);
 
 // const isDev = process.env.NODE_ENV !== 'production';
-const CHUCK_API =  'https://api.chucknorris.io/jokes/random';
+const CHUCK_API = 'https://api.chucknorris.io/jokes/random';
 
 class App extends Component {
   constructor(props) {
@@ -36,24 +36,25 @@ class App extends Component {
         });
       });
 
-    }
+  }
 
   render() {
     return (
       <div className="vh-100 bg-purple flex flex-column justify-center items-center">
         <button className="flex justify-center items-center f1  outline-black br-100 h5 w5 dim ph8 pv2 dib black bg-yellow mr4 mb2"
-        onClick={this.handleModalOpen}>
-        Hit Me!
+          onClick={this.handleModalOpen}>
+          Hit Me!
         </button>
         <img src={chuckPic} />
         <Modal className="bg-black red" closeTimeoutMS={150} isOpen={this.state.modalOpen}>
-          <header>
+          <header className="flex justify-end mr4 ">
+            <button className="f1 ph3 pv2 mb2 dib yellow bg-green b--none mt4" onClick={this.handleModalClose}>X</button>
+          </header>
+          <main className="flex-grow-1 flex flex-column justify-center items-center">
             <div className="flex justify-center items-center flex-column h-100">
               <h1>Joke's on............Chuck</h1>
             </div>
-          </header>
-          <main className="flex-grow-1 flex flex-column justify-center items-center">
-          <p>{this.state.value}</p>
+            <p>{this.state.value}</p>
           </main>
         </Modal>
       </div>
