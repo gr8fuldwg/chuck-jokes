@@ -19,6 +19,7 @@ class App extends Component {
       error: null
     }
     this.handleModalOpen = this.handleModalOpen.bind(this);
+    this.handleModalClose = this.handleModalClose.bind(this);
   }
   handleModalOpen() {
     axios.get(CHUCK_API)
@@ -37,7 +38,9 @@ class App extends Component {
       });
 
   }
-
+handleModalClose() {
+  this.setState({ modalOpen: false });
+}
   render() {
     return (
       <div className="vh-100 bg-purple flex flex-column justify-center items-center">
