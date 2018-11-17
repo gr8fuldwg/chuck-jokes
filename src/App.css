@@ -1,3 +1,13 @@
+.App-h1 {
+  font-size: 5rem;
+}
+
+.App-p {
+  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Animation */
 .hvr-buzz-out:hover, .hvr-buzz-out:focus, .hvr-buzz-out:active {
   animation-name: hvr-buzz-out;
   animation-duration: .75s;

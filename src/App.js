@@ -49,15 +49,15 @@ handleModalClose() {
           Hit Me!
         </button>
         <img className="hvr-buzz-out" src={chuckPic} />
-        <Modal className="bg-black red" closeTimeoutMS={150} isOpen={this.state.modalOpen}>
+        <Modal className="bg-black white" closeTimeoutMS={150} isOpen={this.state.modalOpen}>
           <header className="flex justify-end mr4 ">
-            <button className="f1 ph3 pv2 mb2 dib yellow bg-green b--none mt4" onClick={this.handleModalClose}>X</button>
+            <button  className="f1 ph3 pv2 mb2 dib black bg-white b--white mt4" onClick={this.handleModalClose}>Close</button>
           </header>
           <main className="flex-grow-1 flex flex-column justify-center items-center">
             <div className="flex justify-center items-center flex-column h-100">
-              <h1>Joke's on............Chuck</h1>
+              <h1 className="App-h1">Joke's on............Chuck</h1>
             </div>
-            <p>{this.state.value}</p>
+            <p className="App-p ml-2">{this.state.value}</p>
           </main>
         </Modal>
       </div>
