@@ -38,21 +38,23 @@ class App extends Component {
       });
 
   }
-handleModalClose() {
-  this.setState({ modalOpen: false });
-}
+  handleModalClose() {
+    this.setState({ modalOpen: false });
+  }
   render() {
     return (
       <div className="vh-100 bg-purple flex flex-column justify-center items-center">
-        <button className="flex justify-center items-center f1  outline-black br-100 h5 w5 dim ph8 pv2 dib black bg-yellow mr4 mb2"
-          onClick={this.handleModalOpen}>
-          Hit Me!
-        </button>
+        <header className="App-header">
+          <button className="App-hit flex justify-center items-center f1 br-100 h5 w5 dim ph8 pv2 dib black bg-yellow mr4 mb2"
+            onClick={this.handleModalOpen}>
+            Hit Me!
+          </button>
+        </header>
         <img className="hvr-buzz-out" src={chuckPic} />
         <Modal className="bg-black white" closeTimeoutMS={150} isOpen={this.state.modalOpen}>
-          <header className="flex justify-end mr4 ">
-            <button  className="f1 ph3 pv2 mb2 dib black dim bg-white b--white mt4 mr4" onClick={this.handleModalClose}>Close</button>
-          </header>
+          <div className="App-close flex justify-end mr4 ">
+            <button className="f1 ph3 pv2 mb2 dib black dim bg-white b--white mt4 mr4" onClick={this.handleModalClose}>Close</button>
+          </div>
           <main className="flex-grow-1 flex flex-column justify-center items-center">
             <div className="flex justify-center items-center flex-column h-100">
               <h1 className="App-h1">Joke's on............Chuck</h1>

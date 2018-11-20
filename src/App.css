@@ -7,6 +7,18 @@
   font-family: 'Times New Roman', Times, serif;
 }
 
+.App-header {
+    justify-items: center
+}
+
+.App-hit {
+    justify-items: center;
+    /* border-color: black; */
+    border-style: solid black 2rem;
+    border: 3rem;
+    /* outline-color: black solid 2rem; */
+}
+
 /* Animation */
 .hvr-buzz-out:hover, .hvr-buzz-out:focus, .hvr-buzz-out:active {
   animation-name: hvr-buzz-out;
@@ -135,7 +147,17 @@ and (max-device-width: 568px) {
     .App-p {
         font-size: 2rem;
         font-family: 'Times New Roman', Times, serif;
-}
+        justify-items: center;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 1em;
+    }
+
+   
+
+    /* .App-main {
+
+    } */
 }
 /*iPhone 6/7/8 */
 
@@ -144,7 +166,21 @@ and (max-device-width: 568px) {
 and (min-device-width: 375px)
 
 and (max-device-width: 667px) {
+    .App-h1 {
+        margin: .67em 0;
+        padding-left: 2em;
+        padding-right: 2em;
+        font-size: 2em;
+    }
 
+    .App-p {
+        font-size: 1rem;
+        font-family: 'Times New Roman', Times, serif;
+        justify-items: center;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 1em;
+    }
 }
 
 /*iPhone 6/7/8Plus */
@@ -154,5 +190,24 @@ and (max-device-width: 667px) {
 and (min-device-width: 414px)
 
 and (max-device-width: 736px) {
+    .App-close {
+        padding-right: 3rem;
+        justify-content: center!;
+    }
+    
+    .App-h1 {
+        margin: .67em 0;
+        padding-left: 2em;
+        padding-right: 2em;
+        font-size: 2em;
+    }
 
+    .App-p {
+        font-size: 2rem;
+        font-family: 'Times New Roman', Times, serif;
+        justify-items: center;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 1em;
+    }
 }
