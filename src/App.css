@@ -170,7 +170,7 @@ and (max-device-width: 667px) {
         margin: .67em 0;
         padding-left: 2em;
         padding-right: 2em;
-        font-size: 2em;
+        font-size: 2rem;
     }
 
     .App-p {
@@ -199,7 +199,7 @@ and (max-device-width: 736px) {
         margin: .67em 0;
         padding-left: 2em;
         padding-right: 2em;
-        font-size: 2em;
+        font-size: 2rem;
     }
 
     .App-p {
