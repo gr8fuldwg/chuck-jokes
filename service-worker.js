@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/chuck-jokes/precache-manifest.4764b47cc6992759e52e7605a61b2291.js"
+  "/chuck-jokes/precache-manifest.263ca188a0ed6ae023f0f64709da7d7b.js"
 );
 
 workbox.clientsClaim();
