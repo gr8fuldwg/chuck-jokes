@@ -52,7 +52,7 @@ class App extends Component {
         </header>
         <img className="hvr-buzz-out" src={chuckPic} />
         <Modal className="fullscreen bg-black white" closeTimeoutMS={150} isOpen={this.state.modalOpen}>
-          <div className="App-close flex justify-end mr4 ">
+          <div className="App-close flex justify-center">
             <button className="f1 ph3 pv2 mb2 dib black dim bg-white b--white mt4 mr4" onClick={this.handleModalClose}>Close</button>
           </div>
           <main className="flex-grow-1 flex flex-column justify-center items-center">
