@@ -8,23 +8,23 @@ self.__precacheManifest = [
     "url": "/chuck-jokes/static/js/runtime~main.afc79ad6.js"
   },
   {
-    "revision": "05e7b325f95b4bb35bf1",
-    "url": "/chuck-jokes/static/js/main.05e7b325.chunk.js"
+    "revision": "bc822707aae02588068b",
+    "url": "/chuck-jokes/static/js/main.bc822707.chunk.js"
   },
   {
     "revision": "c5bf2a1d51e6e7151530",
     "url": "/chuck-jokes/static/js/1.c5bf2a1d.chunk.js"
   },
   {
-    "revision": "05e7b325f95b4bb35bf1",
-    "url": "/chuck-jokes/static/css/main.684d0ed1.chunk.css"
+    "revision": "bc822707aae02588068b",
+    "url": "/chuck-jokes/static/css/main.b2566eae.chunk.css"
   },
   {
     "revision": "c5bf2a1d51e6e7151530",
     "url": "/chuck-jokes/static/css/1.d55798df.chunk.css"
   },
   {
-    "revision": "3877a7b11db19f8836879cae7d8c38e3",
+    "revision": "2e3c903ef02bcdbe3c53c915c1e21fab",
     "url": "/chuck-jokes/index.html"
   }
 ];
